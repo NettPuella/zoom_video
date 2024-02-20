@@ -167,6 +167,7 @@ socket.on("ice", (ice) => {
 function makeConnection(){
     // 실제로 앱을 만들때는 내 소유의 stun 서버 주소가 있어야함
     // 비디오를 주고받기 위해 stun 서버를 사용하고 있는게 아님, 공용 주소를 알아내기 위해 사용하고 있는거임
+    //
     myPeerConnection = new RTCPeerConnection({
         iceServers: [
           {
